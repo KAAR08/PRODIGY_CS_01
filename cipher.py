@@ -90,14 +90,10 @@ def encrypt():
                 if not character.isalpha():
                     encrypted_message += character
                 else:
-                   if character.isupper():
-                     start = 65
-                   else:
-                    start=97
-                encrypted_message += chr((ord(character)-start+shift)%26+start)
-            message_body.configure(text=encrypted_message)
-            print(encrypted_message)
-            
+                   character_code = ord(character)
+                   ciphered_character = chr(character_code + shift)
+                   encrypted_message += ciphered_character
+            message_body.configure(text=encrypted_message)            
             
             
         #Message that notifies the valid input as shift pops
@@ -153,14 +149,11 @@ def decrypt():
                 if not character.isalpha():
                     decrypted_message += character
                 else:
-                   if character.isupper():
-                     start = 65
-                   else:
-                    start=97
-                    decrypted_message += chr((ord(character)-start-shift)%26+start)
-            message_body.configure(text=decrypted_message)
-            print(decrypted_message)
-            
+                   character_code = ord(character)
+                   deciphered_character = chr(character_code - shift)
+                   decrypted_message += deciphered_character
+                   
+            message_body.configure(text=decrypted_message)            
             
             
 
