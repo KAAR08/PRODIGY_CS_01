@@ -1,3 +1,3 @@
-#EncDec App
+# EncDec App
 
-##Introduction
+## Introduction
