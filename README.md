@@ -1,3 +1,8 @@
 # EncDec App
 
-## Introduction
+## About the App
+EncDec is a python GUI app that encrypts and decrypts thus converts messages in a form not understanble by unauthorized users, using Caesar Cipher's cryptographic technique.
+
+## App interface
+![App Interface]("C:\Users\Admin\OneDrive - United States International University (USIU)\Desktop\interface.png")
+
