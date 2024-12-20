@@ -14,11 +14,11 @@ app.title("EncDec")
 
 #Images used in the App
  
-header_img_data = Image.open("hder.jpg")
-side_img_data = Image.open("bg2.jpg")
-message_data = Image.open("th (1).jpeg")
-enc_image = Image.open("lo1.png")
-dec_image = Image.open("dec.png")
+header_img_data = Image.open("static/hder.jpg")
+side_img_data = Image.open("static/bg2.jpg")
+message_data = Image.open("static/th (1).jpeg")
+enc_image = Image.open("static/lo1.png")
+dec_image = Image.open("static/dec.png")
 
 
 header_img = CTkImage(dark_image=header_img_data, light_image=header_img_data, size=(1000,84))
